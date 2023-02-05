@@ -1,0 +1,5 @@
+excluded:
+  - Pods
+  - demo03UITests
+  - demo03Tests
+line_length: 200
