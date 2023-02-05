@@ -7,23 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController, ChooseDelegate {
+class ViewController: UIViewController {
 
     @IBOutlet weak var firstnameTF: UITextField!
 
     @IBOutlet weak var lastnameTF: UITextField!
     
     @IBAction func onPressDelete(_ sender: Any) {
-        print("onPressDelete 1")
         if let vc = storyboard?.instantiateViewController(withIdentifier: "choose_gender") as? ChooseViewController {
-                    print("onPressDelete 2")
-                    vc.delegate = self
-                    self.navigationController?.pushViewController(vc, animated: true)
+            vc.change = setGender
+            self.navigationController?.pushViewController(vc, animated: true)
                 }
     }
     
-    func genderChoosen(gender: String) {
-        print("Choosen gender = " + gender)
+    func setGender(gender: String) {
+        print("Set gender = " + gender)
     }
     
     

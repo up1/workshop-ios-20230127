@@ -9,19 +9,14 @@ import UIKit
 
 class ChooseViewController: UIViewController {
     
-    weak var delegate: ChooseDelegate?
-
+    var change : ((String) -> Void)?
+    
     @IBAction func pressGenderButton(_ sender: Any) {
-        
-        delegate?.genderChoosen(gender: "Female")
-        
-        
-        // Return to previous VC
         navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: {
+            self.change!("XXX")
+        })
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
