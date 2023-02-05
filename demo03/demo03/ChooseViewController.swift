@@ -9,18 +9,21 @@ import UIKit
 
 class ChooseViewController: UIViewController {
     
-    var change : ((String) -> Void)?
-    
     @IBAction func pressGenderButton(_ sender: Any) {
+        
+        let data = "Some data"
+        NotificationCenter.default.post(name: Notification.Name("DataNotification"), object: nil, userInfo: ["data": data])
+        
         navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: {
-            self.change!("XXX")
-        })
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
+    
+    
   
 
 }
