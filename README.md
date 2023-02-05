@@ -15,8 +15,8 @@
 * Passing data between View Controller
   * Segue
   * Delegate pattern
-  * Singleton
   * Closure
+  * Singleton
   * Notification Center
   
 * Working with Networking
