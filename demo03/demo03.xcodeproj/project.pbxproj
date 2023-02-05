@@ -10,6 +10,8 @@
 		500B7685691E44F6538D9959 /* Pods_demo03_demo03UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C9E14F36D3AF3B6CF24C71 /* Pods_demo03_demo03UITests.framework */; };
 		78D2BD922A8DA38D1E1A562E /* Pods_demo03.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C323FA06C9138B5805B90625 /* Pods_demo03.framework */; };
 		A20D85B1298FC7FB0007E370 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D85B0298FC7FB0007E370 /* SecondViewController.swift */; };
+		A20D85B3298FD5D80007E370 /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D85B2298FD5D80007E370 /* ChooseViewController.swift */; };
+		A20D85B5298FD6550007E370 /* ChooseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D85B4298FD6550007E370 /* ChooseDelegate.swift */; };
 		A23951512983D3950054B4C6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23951502983D3950054B4C6 /* SnapshotHelper.swift */; };
 		A2F70D7B2983874800779DCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F70D7A2983874800779DCB /* AppDelegate.swift */; };
 		A2F70D7D2983874800779DCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F70D7C2983874800779DCB /* SceneDelegate.swift */; };
@@ -51,6 +53,8 @@
 		893718FCA0129BC7D11154E8 /* Pods-demo03Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo03Tests.release.xcconfig"; path = "Target Support Files/Pods-demo03Tests/Pods-demo03Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9B4EDB9F967CD5A7202FFDEC /* Pods-demo03Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo03Tests.debug.xcconfig"; path = "Target Support Files/Pods-demo03Tests/Pods-demo03Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A20D85B0298FC7FB0007E370 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A20D85B2298FD5D80007E370 /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		A20D85B4298FD6550007E370 /* ChooseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDelegate.swift; sourceTree = "<group>"; };
 		A23951502983D3950054B4C6 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		A2F70D772983874800779DCB /* demo03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F70D7A2983874800779DCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				A2F70D882983874A00779DCB /* Info.plist */,
 				A2F70DAB2983A76600779DCB /* API.swift */,
 				A20D85B0298FC7FB0007E370 /* SecondViewController.swift */,
+				A20D85B2298FD5D80007E370 /* ChooseViewController.swift */,
+				A20D85B4298FD6550007E370 /* ChooseDelegate.swift */,
 			);
 			path = demo03;
 			sourceTree = "<group>";
@@ -419,7 +425,9 @@
 				A2F70D7B2983874800779DCB /* AppDelegate.swift in Sources */,
 				A2F70DAC2983A76600779DCB /* API.swift in Sources */,
 				A20D85B1298FC7FB0007E370 /* SecondViewController.swift in Sources */,
+				A20D85B5298FD6550007E370 /* ChooseDelegate.swift in Sources */,
 				A2F70D7D2983874800779DCB /* SceneDelegate.swift in Sources */,
+				A20D85B3298FD5D80007E370 /* ChooseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
