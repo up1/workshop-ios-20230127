@@ -16,10 +16,16 @@ class DetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        delegate.setData(data : "xxxxxx")
+        
     }
     
-
+    @IBAction func onPressGender(_ sender: UIButton) {
+        delegate.setData(data : (sender.titleLabel?.text)!)
+        
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
