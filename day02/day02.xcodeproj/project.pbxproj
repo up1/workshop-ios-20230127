@@ -18,6 +18,7 @@
 		A20D85EE2990A1540007E370 /* day02UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D85ED2990A1540007E370 /* day02UITestsLaunchTests.swift */; };
 		A20D85FB2990A7FF0007E370 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D85FA2990A7FF0007E370 /* HelloViewController.swift */; };
 		A20D85FD2990B3090007E370 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D85FC2990B3090007E370 /* DetailViewController.swift */; };
+		A20D86002990BB770007E370 /* DetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D85FF2990BB770007E370 /* DetailProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A20D85ED2990A1540007E370 /* day02UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day02UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A20D85FA2990A7FF0007E370 /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 		A20D85FC2990B3090007E370 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A20D85FF2990BB770007E370 /* DetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		A20D85C92990A1500007E370 /* day02 */ = {
 			isa = PBXGroup;
 			children = (
+				A20D85FE2990BB5F0007E370 /* detail */,
 				A20D85CA2990A1500007E370 /* AppDelegate.swift */,
 				A20D85CC2990A1500007E370 /* SceneDelegate.swift */,
 				A20D85CE2990A1500007E370 /* ViewController.swift */,
@@ -131,6 +134,14 @@
 				A20D85ED2990A1540007E370 /* day02UITestsLaunchTests.swift */,
 			);
 			path = day02UITests;
+			sourceTree = "<group>";
+		};
+		A20D85FE2990BB5F0007E370 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				A20D85FF2990BB770007E370 /* DetailProtocol.swift */,
+			);
+			path = detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20D86002990BB770007E370 /* DetailProtocol.swift in Sources */,
 				A20D85CF2990A1500007E370 /* ViewController.swift in Sources */,
 				A20D85CB2990A1500007E370 /* AppDelegate.swift in Sources */,
 				A20D85FD2990B3090007E370 /* DetailViewController.swift in Sources */,

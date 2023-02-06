@@ -7,7 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, DetailProtocol {
+    
+    func setData(data: String) {
+        print("Call setData = " + data)
+    }
+    
 
     @IBOutlet weak var messageTF: UITextField!
     
@@ -31,7 +36,7 @@ class ViewController: UIViewController {
         print("Show detail page")
         if let vc = storyboard?.instantiateViewController(
                        withIdentifier: "detail_page") as? DetailViewController {
-
+            vc.delegate = self
             self.navigationController?.pushViewController(vc, animated: true)
 
         }
