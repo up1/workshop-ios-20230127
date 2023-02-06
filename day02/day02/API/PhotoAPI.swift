@@ -4,18 +4,6 @@ import Moya
 import Alamofire
 
 class PhotoAPI {
-    func fetchData01(){
-        AF.request("https://jsonplaceholder.typicode.com/photos?_limit=5")
-            .validate()
-            .responseJSON { response in
-                switch response.result {
-                case .success(let value):
-                    print("JSON: \(value)")
-                case .failure(let error):
-                    print("Error: \(error)")
-                }
-            }
-    }
     
     func fetchData02(){
         let provider = MoyaProvider<MyService>()
@@ -28,6 +16,19 @@ class PhotoAPI {
                 print("Error: \(error)")
             }
         }
+    }
+    
+    func fetchData01(){
+        AF.request("https://jsonplaceholder.typicode.com/photos?_limit=5")
+            .validate()
+            .responseJSON { response in
+                switch response.result {
+                case .success(let value):
+                    print("JSON: \(value)")
+                case .failure(let error):
+                    print("Error: \(error)")
+                }
+            }
     }
 }
 
