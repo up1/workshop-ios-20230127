@@ -59,5 +59,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func doClickAllAPI(_ sender: Any) {
+        print("doClickAllAPI")
+        let api = PhotoAPI()
+        api.fetchData02()
+    }
 }
 

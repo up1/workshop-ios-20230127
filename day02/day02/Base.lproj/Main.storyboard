@@ -41,6 +41,15 @@
                                     <action selector="onClickDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NVC-DQ-wyv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe9-1S-YhE">
+                                <rect key="frame" x="110" y="491" width="163" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Call API"/>
+                                <connections>
+                                    <action selector="doClickAllAPI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCU-oZ-B5d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -52,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518" y="5"/>
+            <point key="canvasLocation" x="516.79389312977094" y="4.9295774647887329"/>
         </scene>
         <!--Hello View Controller-->
         <scene sceneID="Iud-EO-hKI">

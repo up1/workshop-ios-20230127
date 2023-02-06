@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'day02' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for day02
+  pod 'Moya', '~> 15.0'  
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'Moya/RxSwift', '~> 15.0'
+  pod 'Moya/ReactiveSwift', '~> 15.0'  
+
+
+  target 'day02Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'day02UITests' do
+    # Pods for testing
+  end
+
+end
