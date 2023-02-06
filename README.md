@@ -1,5 +1,7 @@
 # Workshop-ios-20230127
 
+* [Miro board](https://miro.com/app/board/uXjVPtwi5Mk=/?share_link_id=447534069278)
+
 ## Day 1
 * Software requirements for workshop
   * XCode 14
@@ -22,6 +24,9 @@
 * Working with Networking
   * Alamorefile
   * Moya
+  * RxSwift
+  * Security
+    * SSL Pinning
 * Testable application
   * MVC
   * MVP
