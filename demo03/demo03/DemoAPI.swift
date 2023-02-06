@@ -24,14 +24,31 @@ class MyAPI {
         provider.request(.photos(limit: 5)) { result in
             switch result {
             case let .success(response):
-                do {
-                    let json = try JSON(response.data)
-                    print("JSON: \(json)")
-                } catch {
-                    print("Error parsing JSON: \(error)")
-                }
+                let json = JSON(response.data)
+                print("JSON: \(json)")
             case let .failure(error):
                 print("Error: \(error)")
+            }
+        }
+    }
+    
+    func fetchUsersWithMoyaRx(){
+        let provider = MoyaProvider<MyService>()
+        provider.rx.requestWithProgress(.photos(limit: 5))
+            .subscribe { event in
+            switch event {
+            case .next(let progressResponse):
+                if let response = progressResponse.response {
+                    let json = JSON(response.data)
+                    print("JSON: \(json)")
+                } else {
+                    print("Progress: \(progressResponse.progress)")
+                }
+            case .error(let error):
+                // handle the error
+                print("Error: \(error)")
+            default:
+                break
             }
         }
     }

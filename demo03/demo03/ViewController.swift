@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBAction func onPressAPI(_ sender: Any) {
         let api = MyAPI()
 //        api.fetchUsers()
-        api.fetchUsersWithMoya()
+        api.fetchUsersWithMoyaRx()
     }
     
     @IBAction func onPressNotification(_ sender: Any) {
