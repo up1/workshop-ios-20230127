@@ -8,7 +8,7 @@ struct UserModel : Codable {
     
 }
 
-typealias MyFunction = (() -> Void)?
+//typealias MyFunction = (() -> Void)?
 
 class B : DetailProtocol {
     

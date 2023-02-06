@@ -7,11 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, DetailProtocol {
-    
-    func setData(data: String) {
-        print("Call setData = " + data)
-    }
+class ViewController: UIViewController {
     
 
     @IBOutlet weak var messageTF: UITextField!
@@ -31,12 +27,19 @@ class ViewController: UIViewController, DetailProtocol {
         vc.message = messageTF.text!
     }
     
+    func setData(data: String) {
+        print("Call setData = " + data)
+    }
+    
+    func setDataV2(data: String) {
+        print("Call setData V2 = " + data)
+    }
     
     @IBAction func onClickDetail(_ sender: Any) {
         print("Show detail page")
         if let vc = storyboard?.instantiateViewController(
                        withIdentifier: "detail_page") as? DetailViewController {
-            vc.delegate = self
+            vc.onChange = setDataV2
             self.navigationController?.pushViewController(vc, animated: true)
 
         }

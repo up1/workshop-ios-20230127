@@ -7,24 +7,26 @@
 
 import UIKit
 
+typealias MyFunction = ((String) -> Void)?
+
 class DetailViewController: UIViewController {
     
-    var delegate : DetailProtocol!
+    var onChange : MyFunction?
 
+    @IBAction func onPressGender(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: {
+            self.onChange!!((sender.titleLabel?.text)!)
+        })
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        
     }
     
-    @IBAction func onPressGender(_ sender: UIButton) {
-        delegate.setData(data : (sender.titleLabel?.text)!)
-        
-        navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
-    }
     
     /*
     // MARK: - Navigation
