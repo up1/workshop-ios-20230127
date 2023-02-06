@@ -21,8 +21,20 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Call prepare")
         let vc = segue.destination as! HelloViewController
         vc.message = messageTF.text!
+    }
+    
+    
+    @IBAction func onClickDetail(_ sender: Any) {
+        print("Show detail page")
+        if let vc = storyboard?.instantiateViewController(
+                       withIdentifier: "detail_page") as? DetailViewController {
+
+            self.navigationController?.pushViewController(vc, animated: true)
+
+        }
     }
     
 }

@@ -17,6 +17,7 @@
 		A20D85EC2990A1540007E370 /* day02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D85EB2990A1540007E370 /* day02UITests.swift */; };
 		A20D85EE2990A1540007E370 /* day02UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D85ED2990A1540007E370 /* day02UITestsLaunchTests.swift */; };
 		A20D85FB2990A7FF0007E370 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D85FA2990A7FF0007E370 /* HelloViewController.swift */; };
+		A20D85FD2990B3090007E370 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20D85FC2990B3090007E370 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A20D85EB2990A1540007E370 /* day02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day02UITests.swift; sourceTree = "<group>"; };
 		A20D85ED2990A1540007E370 /* day02UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day02UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A20D85FA2990A7FF0007E370 /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+		A20D85FC2990B3090007E370 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				A20D85D52990A1530007E370 /* LaunchScreen.storyboard */,
 				A20D85D82990A1530007E370 /* Info.plist */,
 				A20D85FA2990A7FF0007E370 /* HelloViewController.swift */,
+				A20D85FC2990B3090007E370 /* DetailViewController.swift */,
 			);
 			path = day02;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				A20D85CF2990A1500007E370 /* ViewController.swift in Sources */,
 				A20D85CB2990A1500007E370 /* AppDelegate.swift in Sources */,
+				A20D85FD2990B3090007E370 /* DetailViewController.swift in Sources */,
 				A20D85CD2990A1500007E370 /* SceneDelegate.swift in Sources */,
 				A20D85FB2990A7FF0007E370 /* HelloViewController.swift in Sources */,
 			);

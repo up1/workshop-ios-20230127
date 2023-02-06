@@ -1,16 +1,18 @@
+//
+//  DetailViewController.swift
+//  day02
+//
+//  Created by Somkiat Puisungnoen on 6/2/2566 BE.
+//
+
 import UIKit
 
-class HelloViewController: UIViewController {
+class DetailViewController: UIViewController {
 
-    @IBOutlet weak var messageLB: UILabel!
-    var message : String = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print("Hello with " + message)
-        messageLB.text = "Hello, " + message
     }
     
 
