@@ -13,6 +13,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var lastnameTF: UITextField!
     
+    @IBAction func onPressAPI(_ sender: Any) {
+        let api = MyAPI()
+//        api.fetchUsers()
+        api.fetchUsersWithMoya()
+    }
     
     @IBAction func onPressNotification(_ sender: Any) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "choose_gender") as? ChooseViewController {
