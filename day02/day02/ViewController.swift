@@ -15,7 +15,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        NotificationCenter.default.addObserver(self,
+        selector: #selector(didReceiveData(_:)),
+        name: Notification.Name("DataNotification"), object: nil)
     }
+                                               
+   @objc func didReceiveData(_ notification: Notification) {
+       print("didReceiveData")
+       if let data = notification.userInfo?["data"] as? String {
+           setData(data: data)
+       }
+   }
+                                               
+//   deinit {
+//       NotificationCenter.default.removeObserver(self)
+//   }
     
     @IBAction func onClickSayHi(_ sender: Any) {
         print("On click")
@@ -39,7 +54,6 @@ class ViewController: UIViewController {
         print("Show detail page")
         if let vc = storyboard?.instantiateViewController(
                        withIdentifier: "detail_page") as? DetailViewController {
-            vc.onChange = setDataV2
             self.navigationController?.pushViewController(vc, animated: true)
 
         }

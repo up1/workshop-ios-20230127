@@ -11,13 +11,14 @@ typealias MyFunction = ((String) -> Void)?
 
 class DetailViewController: UIViewController {
     
-    var onChange : MyFunction?
-
+   
     @IBAction func onPressGender(_ sender: UIButton) {
+        NotificationCenter.default.post(name: Notification.Name("DataNotification"),
+                                        object: nil,
+                                        userInfo: ["data": "Female" ])
+        
         navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: {
-            self.onChange!!((sender.titleLabel?.text)!)
-        })
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
